@@ -1,8 +1,8 @@
-package http
+package pro.samy.http
 
 import com.sun.net.httpserver.HttpExchange
 import com.sun.net.httpserver.HttpHandler
-import notification.PopupThingy
+import pro.samy.notification.PopupThingy
 import java.io.IOException
 
 class CancelHttpHandler : HttpHandler {

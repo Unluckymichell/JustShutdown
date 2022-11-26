@@ -1,4 +1,4 @@
-package http
+package pro.samy.http
 
 import com.sun.net.httpserver.HttpExchange
 

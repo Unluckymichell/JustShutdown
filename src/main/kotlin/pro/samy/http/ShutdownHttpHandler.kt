@@ -1,9 +1,9 @@
-package http
+package pro.samy.http
 
 import com.sun.net.httpserver.HttpExchange
 import com.sun.net.httpserver.HttpHandler
-import http.HttpUtil.sendResponse
-import popup
+import pro.samy.Main.Companion.popup
+import pro.samy.http.HttpUtil.sendResponse
 import java.io.File
 import java.io.IOException
 import kotlin.system.exitProcess

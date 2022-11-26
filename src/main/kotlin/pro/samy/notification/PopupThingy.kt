@@ -1,10 +1,10 @@
-package notification
+package pro.samy.notification
 
-import http.ShutdownHttpHandler
-import Server
-import java.io.File
+import pro.samy.Main
+import pro.samy.http.ShutdownHttpHandler
 import java.awt.*
 import java.awt.TrayIcon.MessageType
+import java.io.File
 import kotlin.system.exitProcess
 
 
@@ -24,7 +24,8 @@ class PopupThingy {
     lateinit var countDownItem: MenuItem
 
     init {
-        val image: Image = Toolkit.getDefaultToolkit().createImage(Server::class.java.getResource("icon.png"))
+        val iconInputStream = Main::class.java.getResourceAsStream("/icon.png")
+        val image: Image = Toolkit.getDefaultToolkit().createImage(iconInputStream!!.readBytes())
         trayIcon = TrayIcon(image, "Just Shutdown")
         trayIcon.isImageAutoSize = true
         trayIcon.toolTip = "What is this?"

@@ -1,14 +1,12 @@
+package pro.samy
+
 import com.sun.net.httpserver.HttpServer
-import http.CancelHttpHandler
-import http.ShutdownHttpHandler
+import pro.samy.http.CancelHttpHandler
+import pro.samy.http.ShutdownHttpHandler
 import java.net.InetSocketAddress
 import java.util.concurrent.Executors
 
 import java.util.concurrent.ThreadPoolExecutor
-
-
-
-
 
 class Server {
     private val SERVER_PORT = 26262
