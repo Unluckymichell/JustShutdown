@@ -13,7 +13,7 @@ class Server {
 
     init {
 
-        val server = HttpServer.create(InetSocketAddress("localhost", SERVER_PORT), 0)
+        val server = HttpServer.create(InetSocketAddress("0.0.0.0", SERVER_PORT), 0)
         server.createContext("/shutdown", ShutdownHttpHandler())
         server.createContext("/cancel", CancelHttpHandler())
 
